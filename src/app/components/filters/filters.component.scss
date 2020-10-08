@@ -1,0 +1,95 @@
+.filters {
+    background: white;
+    display: table;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .year-text {
+        text-align: center;
+        font-size: 12px;
+    }
+    span {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: inline-block;
+        padding: 3px 25px;
+    }
+    .launch-year {
+        // margin-left: 10%;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside; //this is important addition
+        list-style-type: none;
+    }
+    ul li {
+        float: left;
+        // width: 40%; //helps to determine number of columns, for instance 33.3% displays 3 columns
+        text-align: left;
+        background-color: #74eb10;
+    }
+
+    .year li {
+        float: left;
+        margin: 10px;
+        // width: 80px;
+        // height: 40px;
+        position: relative;
+        text-align: center;
+    }
+
+    .year label,
+    .year input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .year input[type="radio"] {
+        opacity: 0.01;
+        z-index: 100;
+    }
+
+    .year input[type="radio"]:checked + label,
+    .Checked + label {
+        background: #46a049;
+    }
+
+    .year label {
+        padding: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        z-index: 90;
+    }
+
+    .year label:hover {
+        background: #ddd;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .filters {
+        width: 100%;
+    }
+    .year-text {
+        span {
+            width: 100%;
+        }
+    }
+    ul li {
+        float: left;
+        width: 40%; //helps to determine number of columns, for instance 33.3% displays 3 columns
+        text-align: left;
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    ul li {
+        width: 30%;
+        font-size: 12px;
+        height: 25px;
+    }
+    .filters {
+        width: 100%;
+    }
+}

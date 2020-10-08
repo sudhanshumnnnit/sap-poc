@@ -1,0 +1,21 @@
+.card {
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-color: #ffffff;
+
+  .container {
+    .field {
+      font-weight: bold;
+    }
+    .field-value {
+      color: #1427e8d4;
+    }
+  }
+}
+.img-card {
+  background-color: #d3d3d378;
+}
+.title {
+  color: #1427e8d4;
+}

@@ -1,0 +1,18 @@
+<div class="col-3 col-s-6">
+    <div class="card">
+        <div class="img-card">
+            <img [src]="tileContent?.links?.mission_patch" alt="Jane" style="width:100%">
+        </div>
+
+        <h4 class="title">{{tileContent.mission_name}} # {{tileContent.flight_number}}</h4>
+        <div class="container">
+            <p><span class="field">Mission Ids:</span></p>
+            <ul>
+                <li *ngFor="let mission of tileContent?.mission_id">{{mission}}</li>
+            </ul>
+            <p><span class="field">Launch Year:</span> <span class="field-value"> {{tileContent.launch_year}}</span></p>
+            <p><span class="field">Successful Launch:</span> <span class="field-value"> {{tileContent.launch_success}}</span></p>
+            <p><span class="field">Successful Landing:</span> <span class="field-value"> {{tileContent.tbd}}</span></p>
+        </div>
+    </div>
+</div>
